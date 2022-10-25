@@ -116,15 +116,15 @@ async function startNaze() {
        }
        let wm_nazedev = { url : ppgc }
        if (pea[0].announce == true) {
-       naze.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nGroup telah ditutup oleh admin, Sekarang hanya admin yang dapat mengirim pesan !`, `Group Settings Change Message by Naze Dev`, wm_nazedev, [])
+       naze.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nGroup telah ditutup oleh admin, Sekarang hanya admin yang dapat mengirim pesan !`, `Group Settings Change Message by Aiman`, wm_nazedev, [])
        } else if(pea[0].announce == false) {
-       naze.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nGroup telah dibuka oleh admin, Sekarang peserta dapat mengirim pesan !`, `Group Settings Change Message by Naze Dev`, wm_nazedev, [])
+       naze.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nGroup telah dibuka oleh admin, Sekarang peserta dapat mengirim pesan !`, `Group Settings Change Message by Aiman`, wm_nazedev, [])
        } else if (pea[0].restrict == true) {
-       naze.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nInfo group telah dibatasi, Sekarang hanya admin yang dapat mengedit info group !`, `Group Settings Change Message by Naze Dev`, wm_nazedev, [])
+       naze.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nInfo group telah dibatasi, Sekarang hanya admin yang dapat mengedit info group !`, `Group Settings Change Message by Aiman`, wm_nazedev, [])
        } else if (pea[0].restrict == false) {
-       naze.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nInfo group telah dibuka, Sekarang peserta dapat mengedit info group !`, `Group Settings Change Message by Naze Dev`, wm_nazedev, [])
+       naze.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nInfo group telah dibuka, Sekarang peserta dapat mengedit info group !`, `Group Settings Change Message by Aiman`, wm_nazedev, [])
        } else {
-       naze.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nGroup Subject telah diganti menjadi *${pea[0].subject}*`, `Group Settings Change Message by Naze Dev`, wm_nazedev, [])
+       naze.send5ButImg(pea[0].id, `「 *Group Settings Change* 」\n\nGroup Subject telah diganti menjadi *${pea[0].subject}*`, `Group Settings Change Message by Aiman`, wm_nazedev, [])
      }
     })
 
@@ -148,8 +148,8 @@ async function startNaze() {
                     ppgroup = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
                 
-                let buttons = [{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 },{ buttonId: 'rules', buttonText: { displayText: '❗Rules' }, type: 1 }]
-                let nyoutube = ('© Naze\nYoutube/Sc :\nhttps://youtube.com/c/Nazedev')
+                let buttons = [{ buttonId: 'donasi', buttonText: { displayText: '⌚ping' }, type: 1 },{ buttonId: 'ping', buttonText: { displayText: '❗Rules' }, type: 1 }]
+                let nyoutube = ('© lynx\iG/Instagramメ :\nhttps://instagram.com/aiman1_23')
                 let jumhal = '100000000000000'
                 if (anu.action == 'add') {
                     naze.sendMessage(anu.id, { image: { url: ppuser }, fileLength: jumhal, contextInfo: { mentionedJid: [num] }, caption: `Welcome To ${metadata.subject} @${num.split("@")[0]}`, buttons: buttons, footer: nyoutube})
@@ -205,7 +205,7 @@ async function startNaze() {
 	for (let i of kon) {
 	    list.push({
 	    	displayName: await naze.getName(i + '@s.whatsapp.net'),
-	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await naze.getName(i + '@s.whatsapp.net')}\nFN:${await naze.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Ponsel\nitem2.EMAIL;type=INTERNET:nazedev@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://instagram.com/naze.dev\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;Indonesia;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
+	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await naze.getName(i + '@s.whatsapp.net')}\nFN:${await naze.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Ponsel\nitem2.EMAIL;type=INTERNET:lynxaiman@yahoo.com\nitem2.X-ABLabel:Email\nitem3.URL:https://instagram.com/aiman1_23\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;Malaysia;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
 	    })
 	}
 	naze.sendMessage(jid, { contacts: { displayName: `${list.length} Kontak`, contacts: list }, ...opts }, { quoted })
