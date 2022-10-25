@@ -3586,7 +3586,7 @@ rules = `╭──❍ *Rules BOT*
 │ * Jangan Spam❗*
 │ 
 ╰────❍`
-let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '👑Sewa' }, type: 1 }]
+let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: 'ping', buttonText: { displayText: '🔎ping' }, type: 1 }]
             await naze.sendButtonText(m.chat, buttons, rules, nyoutube, m, {quoted: fkontak})
             }
             break
@@ -3642,7 +3642,7 @@ let alfamart = `628111500959@s.whatsapp.net`
 ├ *Wit* : ${timur} WIT
 ╰──❍`
             let ments = [ownernya, me, ini_mark]
-            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menuメ' }, type: 1 },{ buttonId: 'rulesメ', buttonText: { displayText: '❗Rulesメ' }, type: 1 },{ buttonId: 'pingメ', buttonText: { displayText: 'ping' }, type: 1 }]
+            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: '📖ʟɪsᴛ ᴍᴇɴᴜメ' }, type: 1 },{ buttonId: 'rules', buttonText: { displayText: '❗ʀᴜʟᴇsメ' }, type: 1 },{ buttonId: 'ping', buttonText: { displayText: '🔎ᴘɪɴɢメ' }, type: 1 }]
             let buttonMessage = {
   document: fs.readFileSync('./media/doc/fake.pptx'),
   fileName : akulaku + (` | Halo ${pushname}`),
@@ -3667,20 +3667,20 @@ let alfamart = `628111500959@s.whatsapp.net`
   naze.sendMessage(m.chat, buttonMessage, {quoted: fkontak})
   }
  break
-            case 'simplemenu': case 'list': case 'help': {
+            case 'simplemenu': case 'lynx': case 'help': {
             let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
             let ments = [ownernya, me, ini_mark]
             let kukiw = `*Kak ${pushname}*`
                 let sections = [
                 {
-	           title: ' ∫ » lynxBot–––––––·•',
+	           title: ' ∫ » 𝘭𝘺𝘯𝘹𝘉𝘰𝘵メ–––––––·•',
 	           rows: [
-	            {title: "〽️ • ping bot", rowId: `ping`, description: `PING BOT`},
-                {title: "📴 • Owner", rowId: `owner`, description: `KLIK UNTUK BERTANYA KEPADA OWNER`}
+	            {title: "🔎 • ᴘɪɴɢ ʙᴏᴛ", rowId: `ping`, description: `PING BOT`},
+                {title: "📴 • ᴏᴡɴᴇʀ", rowId: `owner`, description: `KLIK UNTUK BERTANYA KEPADA Aiman`}
 	            ]
                 },{
-                title: "⚠︎  ∫ » CHANGE MENU BOT « ✧",
+                title: "⚠︎  ∫ » 𝘊𝘏𝘈𝘕𝘎𝘌 𝘔𝘌𝘕𝘜 𝘉𝘖𝘛 « ✧",
                 rows: [
                 {title: "✦  「 Group 」", rowId: `mgroup`, description: `╰ ► 👥Fitur Buat Grup, :v`},
                 {title: "✦  「 Webzone 」", rowId: `mwebzone`, description: `╰ ► 📹Cari Film? Sini Tempatnya `},
@@ -3701,15 +3701,15 @@ let alfamart = `628111500959@s.whatsapp.net`
                 {title: "✦  「 Owner 」", rowId: `mowner`, description: `╰ ► 🎟 Owner lynx yang hensem:>`}
                 ]
                 },{
-	           title: ' ∫ » SUPPORT ME –––––––·•',
+	           title: ' ∫ » 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ꋬ꒐ꂵꋬꋊメ  –––––––·•',
 	           rows: [
-	            {title: "🎟 • ping", rowId: `ping`, description: `╰ ►  Ping ♕︎`},
+	            {title: "📱 • Tiktokメ", rowId: `followTiktokメ`, description: `╰ ► 📱 tiktok.com/@aiman_nightsad`},
                 {title: "🔴 • Instagramメ", rowId: `followInstagramメ`, description: `╰ ► 📢 https://instagram.com/aiman1_23`},
-                {title: "📚 • Github", rowId: `sc`, description: `╰ ► 🎷 Follow My Github ♕︎`}
+                {title: "📚 • Githubメ", rowId: `sc`, description: `╰ ► 🎷 Follow My Github ♕︎`}
 	]
   },
 ]
-                naze.sendListMsg(m.chat, kukiw, nyoutube, `*${ucapanWaktu}*`, `Touch Me (⁠≧⁠▽⁠≦⁠)`, sections, fkontak)
+                naze.sendListMsg(m.chat, kukiw, nyoutube, `*${ucapanWaktu}*`, `𝘛𝘰𝘶𝘤𝘩 𝘔𝘦 (⁠≧⁠▽⁠≦⁠)`, sections, fkontak)
             }
             break
             case 'mgroup': {
@@ -4406,8 +4406,8 @@ let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '⬅️Back'
 │⭔ ${prefix}setmenu [option]
 │
 ╰────❍
-_follow Instagram ye_\n_aiman1_23_`
-                let buttons = [{ buttonId: 'ping', buttonText: { displayText: 'ping' }, type: 1 },{ buttonId: 'rules', buttonText: { displayText: '❗Rules' }, type: 1 }]
+_follow Instagram ye_\nhttps://instagram.com/aiman1_23`
+                let buttons = [{ buttonId: 'ping', buttonText: { displayText: 'ping❗' }, type: 1 },{ buttonId: 'rules', buttonText: { displayText: 'Rules❗' }, type: 1 }]
             naze.sendMessage(m.chat, { caption: `${anu}`, location: { jpegThumbnail: await reSize(faall, 300, 200)}, buttons: buttons, footer: nyoutube, mentions: ments})
             }
             break
