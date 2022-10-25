@@ -148,8 +148,8 @@ async function startNaze() {
                     ppgroup = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
                 
-                let buttons = [{ buttonId: 'donasi', buttonText: { displayText: '⌚ping' }, type: 1 },{ buttonId: 'ping', buttonText: { displayText: '❗Rules' }, type: 1 }]
-                let nyoutube = ('© lynx\iG/Instagramメ :\nhttps://instagram.com/aiman1_23')
+                let buttons = [{ buttonId: 'ping', buttonText: { displayText: '⌚ping' }, type: 1 },{ buttonId: 'owner', buttonText: { displayText: 'Ownerメ' }, type: 1 }]
+                let nyoutube = ('© lynx\Instagramメ :\nhttps://instagram.com/aiman1_23')
                 let jumhal = '100000000000000'
                 if (anu.action == 'add') {
                     naze.sendMessage(anu.id, { image: { url: ppuser }, fileLength: jumhal, contextInfo: { mentionedJid: [num] }, caption: `Welcome To ${metadata.subject} @${num.split("@")[0]}`, buttons: buttons, footer: nyoutube})
