@@ -174,7 +174,7 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
             if (typeof setting !== 'object') global.db.data.settings[botNumber] = {}
 	    if (setting) {
 		if (!isNumber(setting.status)) setting.status = 0
-		if (!('autobio' in setting)) setting.autobio = false
+		if (!('autobio' in setting)) setting.autobio = true
 		if (!('templateImage' in setting)) setting.templateImage = true
 		if (!('templateVideo' in setting)) setting.templateVideo = false
 		if (!('templateGif' in setting)) setting.templateGif = false
@@ -3642,7 +3642,7 @@ let alfamart = `628111500959@s.whatsapp.net`
 ├ *Wit* : ${timur} WIT
 ╰──❍`
             let ments = [ownernya, me, ini_mark]
-            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: 'rules', buttonText: { displayText: '❗Rules' }, type: 1 },{ buttonId: 'ping', buttonText: { displayText: 'ping' }, type: 1 }]
+            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menuメ' }, type: 1 },{ buttonId: 'rulesメ', buttonText: { displayText: '❗Rulesメ' }, type: 1 },{ buttonId: 'pingメ', buttonText: { displayText: 'ping' }, type: 1 }]
             let buttonMessage = {
   document: fs.readFileSync('./media/doc/fake.pptx'),
   fileName : akulaku + (` | Halo ${pushname}`),
@@ -3676,7 +3676,7 @@ let alfamart = `628111500959@s.whatsapp.net`
                 {
 	           title: ' ∫ » lynxBot–––––––·•',
 	           rows: [
-	            {title: "〽️ • Sewa", rowId: `ping`, description: `PING BOT`},
+	            {title: "〽️ • ping bot", rowId: `ping`, description: `PING BOT`},
                 {title: "📴 • Owner", rowId: `owner`, description: `KLIK UNTUK BERTANYA KEPADA OWNER`}
 	            ]
                 },{
@@ -3703,8 +3703,8 @@ let alfamart = `628111500959@s.whatsapp.net`
                 },{
 	           title: ' ∫ » SUPPORT ME –––––––·•',
 	           rows: [
-	            {title: "🎟 • Donasi", rowId: `ping`, description: `╰ ►  Ping ♕︎`},
-                {title: "🔴 • Subscribe", rowId: `followInstagramメ`, description: `╰ ► 📢 https://instagram.com/aiman1_23`},
+	            {title: "🎟 • ping", rowId: `ping`, description: `╰ ►  Ping ♕︎`},
+                {title: "🔴 • Instagramメ", rowId: `followInstagramメ`, description: `╰ ► 📢 https://instagram.com/aiman1_23`},
                 {title: "📚 • Github", rowId: `sc`, description: `╰ ► 🎷 Follow My Github ♕︎`}
 	]
   },
@@ -4095,7 +4095,7 @@ oner = `╭──❍ *Owner Menu*
 │⭔ ${prefix}setmenu [option]
 │
 ╰────❍`
-let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: 'ping', buttonText: { displayText: 'ping' }, type: 1 }]
             await naze.sendButtonText(m.chat, buttons, oner, nyoutube, m, {quoted: fkontak})
             }
             break
@@ -4406,7 +4406,7 @@ let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '⬅️Back'
 │⭔ ${prefix}setmenu [option]
 │
 ╰────❍
-_follow Instagram ye_\n_Jangan Ngarep Free _`
+_follow Instagram ye_\n_aiman1_23_`
                 let buttons = [{ buttonId: 'ping', buttonText: { displayText: 'ping' }, type: 1 },{ buttonId: 'rules', buttonText: { displayText: '❗Rules' }, type: 1 }]
             naze.sendMessage(m.chat, { caption: `${anu}`, location: { jpegThumbnail: await reSize(faall, 300, 200)}, buttons: buttons, footer: nyoutube, mentions: ments})
             }
