@@ -48,7 +48,7 @@ const hariiini = moment.tz('Asia/Jakarta').format('DD MMMM YYYY')
 const barat = moment.tz('Asia/Jakarta').format('HH:mm:ss')
 const tengah = moment.tz('Asia/Makassar').format('HH:mm:ss')
 const timur = moment.tz('Asia/Jayapura').format('HH:mm:ss')
-const nyoutube = ('© lynx\nTiktok owner :tiktok.com/@aiman_nightsad')  //ubah di config biar ngk emror
+const nyoutube = ('© lynx\n𝚆𝚑𝚊𝚝𝚜𝚊𝚙𝚙 𝚋𝚘𝚝 メ ')  //ubah di config biar ngk emror
 const ini_mark = `0@s.whatsapp.net`
 const ownernya = ownernomer + '@s.whatsapp.net'
 gambar = fs.readFileSync('./media/image/naze.jpg')
@@ -871,7 +871,7 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
             if (!isPremium) throw mess.premime
 			if (!text) throw `Example : ${prefix + command} hai|halo`
             let jawab = `${text.split("|")[0]}`
-            let buttons = [{ buttonId: 'menu', buttonText: { displayText: `` }, type: 1 }]
+            let buttons = [{ buttonId: '١٥٧٤', buttonText: { displayText: `١٥٧٤` }, type: 1 }]
             await naze.sendButtonText(m.chat, buttons, jawab, `${text.split("|")[1]}`, m, {quoted: ftoko})
             }
             break
@@ -907,7 +907,7 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
                 //if (m.text.includes(/^1|2|3|4|5|6|7|8|9|0/)) return m.reply(`Invalid!\n\nPake Nama Woy\nJangan Pakai Tag / Nomer!`)
                 if (!q) return m.reply(`Invalid!\n\nYg mau di cek siapa anjir?`)
                 predea = await axios.get(`https://api.agify.io/?name=${q}`)
-                let jawab = (`Nama : ${predea.data.name}\n*Mati Pada Umur :* ${predea.data.age} Tahun.\n\n_Cepet Cepet Tobat Bro_\n_Soalnya Mati ga ada yang tau_`)
+                let jawab = (`Nama : ${predea.data.name}\n*Mati Pada Umur :* ${predea.data.age} Tahun.\n\n_Cepat Cepat Tobat Bro_\n_Soalnya Mati ga ada yang tau_`)
                 let buttons = [{ buttonId: 'hehehe', buttonText: { displayText: 'SABAR🗿' }, type: 1 }]
             await naze.sendButtonText(m.chat, buttons, jawab, nyoutube, m, {mentions: [m.sender], quoted: fkontak})
             }
@@ -988,7 +988,7 @@ break
                 m.reply('https://github.com/ai-man-123')
             }
             break		 
-            case 'id ml owner': {
+            case 'ml': {
             let jawab = `*${ucapanWaktu}*\n*id ml:742991628(8963)*`
             let buttons = [{ buttonId: 'aiman', buttonText: { displayText: 'aimanメ' }, type: 1 },{ buttonId: 'speedtest', buttonText: { displayText: 'speedtestメ' }, type: 1 }]
             let buttonMessage = {
@@ -1501,10 +1501,10 @@ break
             await naze.sendButtonText(m.chat, buttons, akhji, nyoutube, m, {mentions: ments})
             }
             break
-            case 'lynx': {
+            case 'dahlah': {
                 reactionMessage = {
                     react: {
-                        text: '🔌',
+                        text: '😶',
                         key: m.key
                     }
                 }
