@@ -1003,7 +1003,7 @@ break
   headerType: 4,
   contextInfo:{externalAdReply:{
   title: 'Aiman',
-  body: 'Subscribe My kawan YouTube', 
+  body: 'Lynxmanメ', 
   showAdAttribution: true,
   thumbnail: thumb,
   mediaType:2,
