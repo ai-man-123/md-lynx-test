@@ -48,7 +48,7 @@ const hariiini = moment.tz('Asia/Jakarta').format('DD MMMM YYYY')
 const barat = moment.tz('Asia/Jakarta').format('HH:mm:ss')
 const tengah = moment.tz('Asia/Makassar').format('HH:mm:ss')
 const timur = moment.tz('Asia/Jayapura').format('HH:mm:ss')
-const nyoutube = ('© lynx\ngithub/Sc :\nhttps://github.com/ai-man-123')  //ubah di config biar ngk emror
+const nyoutube = ('© lynx\nTiktok owner :tiktok.com/@aiman_nightsad')  //ubah di config biar ngk emror
 const ini_mark = `0@s.whatsapp.net`
 const ownernya = ownernomer + '@s.whatsapp.net'
 gambar = fs.readFileSync('./media/image/naze.jpg')
@@ -181,7 +181,7 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
 		if (!('templateMsg' in setting)) setting.templateMsg = false	
 	    } else global.db.data.settings[botNumber] = {
 		status: 0,
-		autobio: false,
+		autobio: true,
 		templateImage: true,
 		templateVideo: false,
 		templateGif: false,
@@ -203,7 +203,7 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
         if (m.text.includes('aiman')) {
     naze.sendMessage(m.chat, {
           react: {
-            text: 'hensem',
+            text: '😎',
             key: m.key
           }})
         }
