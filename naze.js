@@ -981,16 +981,16 @@ break
             }
             break
             case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                naze.sendMessage(m.chat, { image: fs.readFileSync('./media/image/naze.jpg'), caption: `*${ucapanWaktu} Kak ${m.pushName}*\n\n *Jika ingin berdonasi silahkan scan gambar diatas*\n\n*Jika ingin sewa bot atau premium*\n*Silahkan Chat Owner*\n\n*Atau klik link dibawah ini*\n_https://saweria.co/naze_\n\n*Atau Transfer via*\n- *Gopay Dana Ovo Qris ShopeePay*\n Ke nomer berikut : 082113821188\n\n_Terima kasih_` }, { quoted: m })
+                naze.sendMessage(m.chat, { image: fs.readFileSync('./media/image/naze.jpg'), caption: `*${ucapanWaktu} Kak ${m.pushName}*\n\n *Jika ingin berdonasi silahkan hantar ke no 0102810046(digi)*\n\n*Jika ingin sewa bot atau premium*\n*Silahkan Chat Owner*\n\n*Atau klik link dibawah ini*\n_wa.me/60102810046\_Terima kasih_` }, { quoted: m })
             }
             break
             case 'sc': {
-                m.reply('https://github.com/ai-man-123/naze-md')
+                m.reply('https://github.com/ai-man-123')
             }
             break		 
-            case 'subsyt': {
-            let jawab = `*${ucapanWaktu}*\n*Silahkan Klik Link Ini*`
-            let buttons = [{ buttonId: 'rules', buttonText: { displayText: '❗Rules' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+            case 'id ml owner': {
+            let jawab = `*${ucapanWaktu}*\n*id ml:742991628(8963)*`
+            let buttons = [{ buttonId: 'aiman', buttonText: { displayText: 'aimanメ' }, type: 1 },{ buttonId: 'speedtest', buttonText: { displayText: 'speedtestメ' }, type: 1 }]
             let buttonMessage = {
   document: fs.readFileSync('./media/doc/fake.pptx'),
   fileName : akulaku + (` | Halo ${pushname}`),
@@ -1141,7 +1141,7 @@ break
 	}
 	break
 	case 'addprem': {
-       m.reply(`*_Error!_*\n*Fitur Addprem & Delprem Akan Owner Buka Next Update*\n_Minggu Depan :v_`)
+       m.reply(`*_Error!_*\n*Fitur Addprem & Delprem Akan Owner Buka Next Update*\n_Minggu Depan :v_ atau tahun depan`)
 		}
 		break
 	    case 'setname': case 'setsubject': {
@@ -1489,22 +1489,22 @@ break
                 naze.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: true, id: m.quoted.id, participant: m.quoted.sender } })
             }
             break
-            case 'report': case 'lapor': {
+            case 'bug': case 'lapor': {
             	if (!text) throw `Example : ${prefix + command} Lapor Ada Fitur Yang error`
                let ownernya = ownernomer + '@s.whatsapp.net'
                let me = m.sender
                let pjtxt = `Pesan Dari : @${me.split('@')[0]} \nUntuk : @${ownernya.split('@')[0]}\n\n${text}`
                let ments = [ownernya, me]
-               let buttons = [{ buttonId: 'hehehe', buttonText: { displayText: '🙏THANKS LAPORANNYA' }, type: 1 }]
+               let buttons = [{ buttonId: 'hehehe', buttonText: { displayText: '🙏THANKS LAPOR KE OWNER ' }, type: 1 }]
             await naze.sendButtonText(ownernya, buttons, pjtxt, nyoutube, m, {mentions: ments})
             let akhji = `Laporan Telah Terkirim\nKe Owner @${ownernya.split('@')[0]}\n*Terima Kasih Laporannya🙏*\n_Nomermu Akan Terblokir_\n_Jika Laporan Hanya Di Buat Buat_`
             await naze.sendButtonText(m.chat, buttons, akhji, nyoutube, m, {mentions: ments})
             }
             break
-            case 'syg aiman': {
+            case 'lynx': {
                 reactionMessage = {
                     react: {
-                        text: '❤',
+                        text: '🔌',
                         key: m.key
                     }
                 }
@@ -3655,7 +3655,7 @@ let alfamart = `628111500959@s.whatsapp.net`
   mentions: ments,
   headerType: 4,
   contextInfo:{externalAdReply:{
-  title: 'Lynx Aiman',
+  title: 'ꋬ꒐ꂵꋬꋊ メ',
   body: 'Whatsapp bot 2.0', 
   showAdAttribution: true,
   thumbnail: thumb,
@@ -4393,17 +4393,17 @@ let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '⬅️Back'
 ╰────❍
 ╭──❍ *Owner Menu*
 │
-│⭔ ${prefix}react [emoji]
-│⭔ ${prefix}chat [option]
-│⭔ ${prefix}join [link]
-│⭔ ${prefix}leave
-│⭔ ${prefix}block @user
-│⭔ ${prefix}unblock @user
-│⭔ ${prefix}bcgroup [text]
-│⭔ ${prefix}bcall [text]
-│⭔ ${prefix}setppbot [image]
-│⭔ ${prefix}setexif
-│⭔ ${prefix}setmenu [option]
+│メ ${prefix}react [emoji]
+│メ ${prefix}chat [option]
+│メ ${prefix}join [link]
+│メ ${prefix}leave
+│メ ${prefix}block @user
+│メ ${prefix}unblock @user
+│メ ${prefix}bcgroup [text]
+│メ ${prefix}bcall [text]
+│メ ${prefix}setppbot [image]
+│メ ${prefix}setexif
+│メ ${prefix}setmenu [option]
 │
 ╰────❍
 _follow Instagram ye_\nhttps://instagram.com/aiman1_23`
